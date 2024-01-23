@@ -7,7 +7,7 @@ public class Hooks {
     public static void beforeAll() {
     }
 
-    @Before
+    @Before //scenario dan önce çalışır
     public void before() {
         DriverFactory.setDriver();
     }
@@ -20,7 +20,7 @@ public class Hooks {
     public void afterStep() {
     }
 
-    @After
+    @After//scenario dan sonra çalışır
     public void after() {
         DriverFactory.quitDriver();
     }
